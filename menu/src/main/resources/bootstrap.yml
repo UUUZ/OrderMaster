@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: menu
+  profiles:
+    active: dev
+  cloud:
+    inetutils:
+      timeout-seconds: 10
+    config:
+      uri: http://localhost:8762
+      fail-fast: true
+client:
+  service-url:
+    defaultZone: http://localhost:8762/eureka/

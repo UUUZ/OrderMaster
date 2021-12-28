@@ -1,0 +1,15 @@
+server:
+  port: 8762
+spring:
+  application:
+    name: configserver
+  profiles:
+    active: native
+  cloud:
+    inetutils:
+      timeout-seconds: 10
+    config:
+      server:
+        native:
+          search-locations: classpath:/shared
+
