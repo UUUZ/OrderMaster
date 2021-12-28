@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.southwind.repository.OrderRepository">
+<mapper namespace="com.uuuz.repository.OrderRepository">
 
     <resultMap id="orderMap" type="order">
         <id column="id" property="id"></id>
         <result column="date" property="date"></result>
         <result column="state" property="state"></result>
-        <association property="menu" select="com.southwind.repository.MenuRepository.findById" column="mid"></association>
-        <association property="user" select="com.southwind.repository.UserRepository.findById" column="uid"></association>
+        <association property="menu" select="com.uuuz.repository.MenuRepository.findById" column="mid"></association>
+        <association property="user" select="com.uuuz.repository.UserRepository.findById" column="uid"></association>
     </resultMap>
 
     <insert id="save" parameterType="Order">
