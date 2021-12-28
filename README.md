@@ -1,2 +1,2 @@
 # OrderMaster
-A microservices based ordering system
+A microservices based ordering system.
